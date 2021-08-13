@@ -976,10 +976,10 @@ contract BEP20 is Context, IBEP20, Ownable {
 
 pragma solidity 0.6.12;
 
-// Caramel with Governance.
-contract Caramel is BEP20('Caramel', 'MEL') {
+// Gudu with Governance.
+contract Gudu is BEP20('Gudu', 'GUD') {
     constructor() public {
-        _mint(msg.sender,50000e18);
+        _mint(msg.sender,1e24);
     }
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
